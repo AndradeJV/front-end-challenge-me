@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 
-import Header from './Components/Header.jsx';
+import HeaderLat from './Components/HeaderLat/HeaderLat.jsx';
+import HeaderMTP from './Components/HeaderMTP/HeaderMTP.jsx';
 
 const App = () => {
 
     return (
         <div className="App">
-            <Header/>
+            <HeaderLat/>
+            <HeaderMTP/>
         </div>
     );
 }

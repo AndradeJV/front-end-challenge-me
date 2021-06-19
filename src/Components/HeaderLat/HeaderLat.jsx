@@ -1,19 +1,17 @@
 import React from 'react';
 import './Header.css';
 
-import imglogo from '../images/favicon.png';
+import imglogo from '../../images/favicon.png';
 
-const Header = () => {
+const HeaderLat = () => {
 
-    //const number = document.querySelector("#number");
+    var data = '';
 
     async function getContentHeaderNumber() {
         try {
             const res = await fetch("https://me-frontend-challenge-api.herokuapp.com/orders/1");
     
-            const data = await res.json(); 
-
-            console.log("Chamando no try " + data);
+            data = await res.json(); 
             showHeaderNumber(data);
             
         } catch (error){
@@ -23,16 +21,9 @@ const Header = () => {
 	
     getContentHeaderNumber();
 
-    function showHeaderNumber (users) {
-
-        let output = '';
-
-        for(var user in users){
-            output += `<p>${user.header}</p>`;
-            console.log("Output " + output);
-        }
-
-        document.querySelector('p').innerHTML = user.header;
+    const showHeaderNumber = () => {
+        document.getElementsByClassName("number")[0].innerHTML = data.header.number;
+        document.getElementsByClassName("numberSerial")[0].innerHTML = data.header.serial;
     }
 
     return (
@@ -41,7 +32,6 @@ const Header = () => {
                 <h1 className="title">Purchase Order</h1>
                 <p id="number" className="number"></p>
                 <p className="numberSerial"><em></em></p>
-
                 <div className="imgLogo">
                     <img src={imglogo} alt="icon ME" width="40px" className="logoIcon"/>
                 </div>
@@ -49,6 +39,6 @@ const Header = () => {
 
         </div>
     )
-    }
+}
 
-export default Header;
+export default HeaderLat;
