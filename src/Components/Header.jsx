@@ -10,16 +10,23 @@ import imgInfo from '../images/sinal-de-informacao.png';
 
 const Header = () => {
 
-    var data = '';
+    var resData = '';
+
+    const data = new Date();
+
+    const day = data.getDate();
+    const month = data.getMonth();
+    const year = data.getFullYear();
 
     async function getContentHeaderNumber() {
         try {
             const res = await fetch("https://me-frontend-challenge-api.herokuapp.com/orders/1");
     
-            data = await res.json(); 
-            showHeaderNumberInfos(data);
-            showHeaderCentralInfos(data);
-            showHeaderValuesInfos(data);
+            resData = await res.json(); 
+
+            showHeaderNumberInfos(resData);
+            showHeaderCentralInfos(resData);
+            showHeaderValuesInfos(resData);
 
         } catch (error){
             console.log("Erro: " + error);
@@ -29,23 +36,24 @@ const Header = () => {
     getContentHeaderNumber();
 
     const showHeaderNumberInfos = () => {
-        document.getElementsByClassName("number")[0].innerHTML = data.header.number;
-        document.getElementsByClassName("numberSerial")[0].innerHTML ="SerialME " + data.header.serial;
+        document.getElementsByClassName("number")[0].innerHTML = resData.header.number;
+        document.getElementsByClassName("numberSerial")[0].innerHTML ="SerialME " + resData.header.serial;
     }
 
     const showHeaderCentralInfos = () => {
-        document.getElementsByClassName("buyer")[0].innerHTML = data.header.buyer;
-        document.getElementsByClassName("name")[0].innerHTML = data.header.contact.name;
-        document.getElementsByClassName("email")[0].innerHTML = data.header.contact.email;
-        document.getElementsByClassName("phone")[0].innerHTML = data.header.contact.phone;
-        document.getElementsByClassName("fax")[0].innerHTML = data.header.contact.fax;
+        document.getElementsByClassName("buyer")[0].innerHTML = resData.header.buyer;
+        document.getElementsByClassName("nameInfos")[0].innerHTML = resData.header.contact.name;
+        document.getElementsByClassName("email")[0].innerHTML = resData.header.contact.email;
+        document.getElementsByClassName("phone")[0].innerHTML = resData.header.contact.phone;
+        document.getElementsByClassName("fax")[0].innerHTML = resData.header.contact.fax;
     }
 
+    const setData = day + '/' + month + '/' + year;
+
     const showHeaderValuesInfos = () => {
-        document.getElementsByClassName("moeda")[0].innerHTML = data.header.currency;
-        document.getElementsByClassName("value")[0].innerHTML = data.header.price;
-        document.getElementsByClassName("status")[0].innerHTML = data.header.status;
-        document.getElementsByClassName("created")[0].innerHTML = data.header.createdAt;
+        document.getElementsByClassName("moeda")[0].innerHTML = resData.header.currency + " " + resData.header.price;
+        document.getElementsByClassName("status")[0].innerHTML = resData.header.status;
+        document.getElementsByClassName("created")[0].innerHTML = "Created on " + setData;
     }
 
     return (
@@ -81,10 +89,11 @@ const Header = () => {
             </div>
 
             <div className="infoLateralDir">
-                <div className="price">
-                    <div className="moeda"></div>
-                    <div className="value"></div>
+                <div className="infoValue">
+                    <h1 className="moeda"></h1>
+                    <h1 className="value"></h1>
                 </div>
+                
                 <div className="status"></div>
                 <div className="created"></div>
             </div>

@@ -86,3 +86,12 @@
     width: 25px;
     margin-top: 2px;
 }
+
+.infoLateralDir{
+    margin-top: 15px;
+    margin-left: 380px;
+}
+
+.infoLateralDir .value {
+    color: #F7B238;
+}
