@@ -1,0 +1,88 @@
+.Header {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.infoLateralEsq{
+    width: 20%;
+    height: 130px;
+    border-radius: 25px;
+    margin: 2% -2.2%;
+    padding: 18px 20px;
+    background-color: #028DCD;
+    color: #FFF;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.infoLateralEsq .title {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.infoLateralEsq p {
+    font-size: 25px;
+}
+
+.infoLateralEsq .number {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.infoLateralEsq .numberSerial {
+    font-size: 18px;
+}
+
+.imgLogo {
+    width: 70px;
+    height: 70px;
+    margin: -80px -50px;
+    border-radius:100%;
+    float: right;
+    border: 2px solid #16527C;
+    background-color: #FFF;
+}
+
+.imgLogo .logoIcon {
+    align-items: center;
+    margin: 13px 14.2px;
+}
+
+.infoCentral {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 30px;  
+}
+
+.infos {
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.nameInfos {
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+.iconGrupo, .iconInfo {
+    width: 19px;
+}
+
+.email, .fax, .phone {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.iconGrupo, .iconInfo{
+    display: inline-block;
+}
+
+.iconEmail, .iconPhone, .iconFax {
+    display: inline-block;
+    padding: 5px;
+    width: 25px;
+    margin-top: 2px;
+}
