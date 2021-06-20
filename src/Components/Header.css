@@ -92,6 +92,19 @@
     margin-left: 380px;
 }
 
-.infoLateralDir .value {
+.infoLateralDir .moeda {
+    font-size: 35px;
+    text-align: left;
+}
+
+.infoLateralDir .status {
+    text-align: end;
     color: #F7B238;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.infoLateralDir .created {
+    text-align: end;
+    margin-top: 20px;
 }
