@@ -9,6 +9,9 @@
 
 ### Rodar app
 
+- O NodeJs deverá estar instalado na máquina a partir da versão = 14.17.0
+   - Versão usada no app
+
 - Instalar a pasta node_modules através do NPM no primeiro nível de pasta
    - npm install --save
 - As dependências vão ser instaladas e basta aguardar.
