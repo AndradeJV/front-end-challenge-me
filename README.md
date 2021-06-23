@@ -1,7 +1,7 @@
 ## Front-end challenge ME - Vaga desenvolvedor front-end
 
 ### Criar tela
-- Responsividade []
+- Responsividade [ ]
 
 ### Consumir API
 - [ x ] Utilizar fetch para consumo da API
