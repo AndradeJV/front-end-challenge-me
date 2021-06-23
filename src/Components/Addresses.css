@@ -1,0 +1,77 @@
+body {
+    overflow:hidden;
+}
+
+.Addresses {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 18px;
+    display: inline-block;
+}
+
+.Addresses p {
+    font-size: 15px;
+    margin: 5px;
+}
+
+.Addresses h1 {
+    font-size: 22px;
+    margin: 5px;
+}
+
+.Addresses h2 {
+    font-size: 18px;
+    color: #BDBDBD;
+    margin: 5px;
+}
+
+.botao {
+    width: 30px;
+    height: 30px;
+    margin: 2 auto;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 45px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+    display: inline-block;
+}
+
+.index{
+    margin-right: 10px;
+    display: inline-block;  
+}
+
+.infosUm, .infosDois, .infosTres {
+    width: 30%;
+    height: 220px;
+    margin: 20px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.numberUm, .numberDois, .numberTres {
+    display: inline-block;
+}
+
+.faxUm, .faxDois, .faxTres {
+    display: inline-block;
+}
+
+.subtitleUm, .subtitleDois, .subtitleTres {
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+}
+
+.codeUm, .codeDois, .codeTres {
+    font-weight: 500;
+    font-size: 25px;
+    color: #BDBDBD;
+}

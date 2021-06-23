@@ -53,7 +53,9 @@ const Body = () => {
                 <h2 className="main">Supplier</h2>
                 <h1 className="client"></h1>
                 <p className="code"></p>
+                <br/>
                 <p className="cnpj"></p>
+                <br/>
                 <p className="addreses"></p>
             </div>
 
