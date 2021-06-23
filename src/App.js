@@ -6,7 +6,6 @@ import Body from './Components/Body.jsx';
 import Addresses from './Components/Addresses.jsx';
 
 const App = () => {
-
     return (
         <div className="App">
             <Header/>

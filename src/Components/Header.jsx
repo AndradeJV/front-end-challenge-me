@@ -74,9 +74,9 @@ const Header = () => {
                     <h1 className="buyer"></h1>
                     
                     <div className="infos">
-                        <img src={imgGrupo} alt="icon Grupo" className="iconGrupo"/>
+                        <img src={imgGrupo} alt="icon Grupo" className="iconGrupo" width="17"/>
                         <div className="nameInfos"></div>
-                        <img src={imgInfo} alt="icon Info" className="iconInfo"/>
+                        <img src={imgInfo} alt="icon Info" className="iconInfo" width="15"/>
                     </div>
                     
                     <img src={imgEmail} alt="icon Email" className="iconEmail"/>            

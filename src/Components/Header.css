@@ -65,9 +65,6 @@
     margin-top: 10px;
 }
 
-.iconGrupo, .iconInfo {
-    width: 19px;
-}
 
 .email, .fax, .phone {
     display: inline-block;
