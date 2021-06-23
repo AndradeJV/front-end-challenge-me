@@ -32,7 +32,7 @@ const Header = () => {
             console.log("Erro: " + error);
         }
     }
-	
+    
     getContentHeaderNumber();
 
     const showHeaderNumberInfos = () => {
@@ -61,7 +61,9 @@ const Header = () => {
             <div className="infoLateralEsq">
                 <h1 className="title">Purchase Order</h1>
                 <p className="number"></p>
-                <em><p className="numberSerial"></p></em>
+                <em>
+                    <p className="numberSerial"></p>
+                </em>
                 <div className="imgLogo">
                     <img src={imglogo} alt="icon ME" width="40px" className="logoIcon"/>
                 </div>

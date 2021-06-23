@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 
-import HeaderLat from './Components/Header.jsx';
+import Header from './Components/Header.jsx';
+import Body from './Components/Body.jsx';
 
 const App = () => {
 
     return (
         <div className="App">
-            <HeaderLat/>
-            
+            <Header/>
+            <Body/>
         </div>
     );
 }
