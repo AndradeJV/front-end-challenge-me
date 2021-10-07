@@ -1,4 +1,4 @@
-## Front-end challenge ME - Vaga desenvolvedor front-end
+## Front-end challenge ME
 
 ### Criar tela
 - Responsividade [ ]
