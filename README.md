@@ -4,8 +4,8 @@
 - Responsividade [ ]
 
 ### Consumir API
-- [ x ] Utilizar fetch para consumo da API
-- [ x ] Evidência da API
+- [x] Utilizar fetch para consumo da API
+- [x] Evidência da API
 
 ### Rodar app
 
